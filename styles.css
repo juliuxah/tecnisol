@@ -1,0 +1,33 @@
+/* --- styles.css --- */
+
+/* Fuentes del sistema para carga rápida y limpia */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Comportamiento de desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animación de pulso suave para el botón de WhatsApp */
+@keyframes pulse-gentle {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.whatsapp-pulse {
+    animation: pulse-gentle 2s ease-in-out infinite;
+}
+
+/* Estilo para los marcadores de posición de imágenes (Degradado Azul-Rojo) */
+.img-placeholder {
+    background: linear-gradient(135deg, #1e3a8a 0%, #dc2626 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
